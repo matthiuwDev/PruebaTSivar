@@ -1,6 +1,6 @@
 import  Sequelize from "sequelize";
 
-export const sequelize = new Sequelize('enterprisesdb', 'root', '', {
+export const sequelize = new Sequelize('enterprisesmanagerdb', 'root', '', {
     host: 'localhost',
     dialect: 'mysql'
 });

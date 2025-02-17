@@ -9,8 +9,8 @@ import { UserEnterpriseRole } from "./models/UserEnterpriseRole.js";
 async function main() {
     try {
         //Prueba de Conexión
-        //await sequelize.authenticate();
-        //console.log('Connection has been established successfully 🛜');
+        await sequelize.authenticate();
+        console.log('Connection has been established successfully 🛜');
 
         //Sincronización
         await sequelize.sync({ alter: true })

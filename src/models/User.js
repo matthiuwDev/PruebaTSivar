@@ -2,9 +2,9 @@ import { DataTypes } from "sequelize";
 import { sequelize } from "../database/database.js";
 
 export const User = sequelize.define('users', {
-    document: {
+    docUser: {
         type: DataTypes.INTEGER, 
-        primarykey: true
+        primarykey: true,
     },
     name: {
         type: DataTypes.STRING,
