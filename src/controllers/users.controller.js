@@ -22,6 +22,19 @@ class UsersController{
             next(error);
         }
     }
+
+    //Método para asociar un Usuario a una Empresa y crear su rol en la misma
+    associateUser = async(req, res, next) => {
+        try {
+            const { docUser, nitEnterprise, idRol } = req.body;
+
+            const createdAssociation = await userService.associateUser({ docUser, nitEnterprise, idRol });
+
+            res.status(201).json({ status: "CREATED", data: createdAssociation });
+        } catch (error) {
+            next(error);
+        }
+    }
 }
 
 export default new UsersController();

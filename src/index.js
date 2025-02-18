@@ -5,6 +5,7 @@ import { PointSale } from "./models/PointSale.js";
 import { Rol } from "./models/Rol.js";
 import { User } from "./models/User.js";
 import { UserEnterpriseRole } from "./models/UserEnterpriseRole.js";
+import { EnterprisePoint } from "./models/EnterprisePoint.js";
 
 async function main() {
     try {

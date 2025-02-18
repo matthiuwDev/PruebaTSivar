@@ -9,5 +9,6 @@ const router = Router();
 router  
     .get('/', enterpriseController.getEnterprises)
     .post('/', validate(enterprise), enterpriseController.createEnterprise)
+    .post('/pointsSale', enterpriseController.associatePointSale)
 
 export default router;

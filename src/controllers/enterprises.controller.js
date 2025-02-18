@@ -22,6 +22,18 @@ class EnterpriseController{
             next(error);
         }
     }
+
+    associatePointSale = async(req, res, next) => {
+        try {
+            const { nitEnterprise, idPoint } = req.body;
+
+            const createdAssociation = await enterpriseService.associatePointSale({nitEnterprise, idPoint});
+
+            res.status(200).json({ status: "CREATED", data: createdAssociation });
+        } catch (error) {
+            next(error);
+        }
+    }
 }
 
 export default new EnterpriseController();
