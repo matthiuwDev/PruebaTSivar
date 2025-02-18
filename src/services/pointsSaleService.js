@@ -1,5 +1,6 @@
 import { PointSale } from "../models/PointSale.js";
 
+//Servicio de 'Puntos de Venta': Estos métodos son los encargados de interactuar con la base de datos y son llamados desde el Controlador de puntos de venta
 class EnterpriseService{
     getPointsSale = async() => {
         try {

@@ -1,5 +1,6 @@
 import pointsSaleService from "../services/pointsSaleService.js";
 
+//Controlador de Puntos de Venta: Procesamos los datos, los pasamos a los servicios (que se encargan de la interacción con la DB) y devolvemos una respuesta al Cliente
 class PointSaleController{
     getPointsSale = async (req, res, next) => {
         try {

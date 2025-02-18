@@ -1,5 +1,6 @@
 import enterpriseService from "../services/enterpriseService.js";
 
+//Controlador de Empresas: Procesamos los datos, los pasamos a los servicios (que se encargan de la interacción con la DB) y devolvemos una respuesta al Cliente
 class EnterpriseController{
     getEnterprises = async (req, res, next) => {
         try {

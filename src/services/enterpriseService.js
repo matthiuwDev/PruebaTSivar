@@ -2,6 +2,7 @@ import { Enterprise } from "../models/Enterprise.js";
 import { EnterprisePoint } from "../models/EnterprisePoint.js";
 import { PointSale } from "../models/PointSale.js";
 
+//Servicio de 'Empresas': Estos métodos son los encargados de interactuar con la base de datos y son llamados desde el Controlador de empresas
 class EnterpriseService{
     getEnterprises = async() => {
         try {

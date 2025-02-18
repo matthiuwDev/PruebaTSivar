@@ -3,6 +3,7 @@ import { Rol } from "../models/Rol.js";
 import { User } from "../models/User.js";
 import { UserEnterpriseRole } from "../models/UserEnterpriseRole.js";
 
+//Servicio de 'Usuarios': Estos métodos son los encargados de interactuar con la base de datos y son llamados desde el Controlador de Usuarios
 class UserService{
     getUsers = async() => {
         try {

@@ -5,9 +5,10 @@ import { pointSale } from "../../schemes/pointSale.scheme.js";
 
 const router = Router();
 
-
+//Rutas de 'Puntos de Venta'
 router  
     .get('/', pointsSaleController.getPointsSale)
+
     .post('/', validate(pointSale), pointsSaleController.createPointsSale)
 
 export default router;

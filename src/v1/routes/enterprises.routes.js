@@ -5,7 +5,7 @@ import { enterprise } from "../../schemes/enterprise.scheme.js";
 
 const router = Router();
 
-
+//Rutas de 'Empresas'
 router  
     .get('/', enterpriseController.getEnterprises)
     .post('/', validate(enterprise), enterpriseController.createEnterprise)

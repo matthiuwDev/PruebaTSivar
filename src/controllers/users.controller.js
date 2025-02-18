@@ -1,5 +1,6 @@
 import userService from "../services/userService.js";
 
+//Controlador de Usuarios: Procesamos los datos, los pasamos a los servicios (que se encargan de la interacción con la DB) y devolvemos una respuesta al Cliente
 class UsersController{
     getUsers = async (req, res, next) => {
         try {

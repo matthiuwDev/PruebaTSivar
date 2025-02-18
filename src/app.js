@@ -8,6 +8,7 @@ import { errorHandler } from './middlewares/errorHandler.js';
 const app = express();
 app.use(express.json());
 
+//Rutas
 app.use("/api/v1/users", v1UsersRouter);
 app.use("/api/v1/enterprises", v1EnterprisesRouter);
 app.use("/api/v1/pointsSale", v1PointsSale)
